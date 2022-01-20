@@ -147,36 +147,6 @@
             </div>
         </article>
     </main>
-    <section class="code">
-        <h4 class="title2">Code Review</h4>
-        <h5 class="title2">CodeWars 4 kyu</h5>
-        <p class="code__text">let snail = function(array) { <br>
-            if (array.length === 1) { <br>
-            return array [0];<br>
-            } else if (array.length === 0) {<br>
-            return [];<br>
-            } else {<br>
-            const sorted = [];<br>
-            sorted.push(...array.shift());<br>
-            for (let i = 0; i < array.length - 1; i++) {<br>
-                sorted.push(array[i].pop())<br>
-                }<br>
-                sorted.push(...array.pop().reverse())<br>
-                for(let i=array.length-1; i>=0; i--){<br>
-                sorted.push(array[i].shift())<br>
-                }<br>
-                sorted.push(...snail(array))<br>
-                return sorted<br>
-                }<br>
-
-                }</p>
-    </section>
-    <footer class="footer">
-        <div class="footer__inner"></div>
-        <a class="url github" href="https://github.com/duckbilled395">https://github.com/duckbilled395</a>
-        <a class="url rsschool" href="https://rs.school/js/">https://rs.school/js/</a>
-        <img class="logo" src="img/rs_school_js.svg" alt="logo">
-    </footer>
 </body>
 
 </html>

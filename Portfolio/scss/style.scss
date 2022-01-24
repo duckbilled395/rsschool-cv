@@ -362,6 +362,20 @@
     justify-content: flex-end;
     margin-top: 100px;
 
+    &__title {
+        width: 300px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0px 0px 0px;
+        font-family: Merriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+    }
+
     &__inner {
         display: flex;
         flex-direction: column;
@@ -462,5 +476,109 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio {
+        &__photos {
+            margin: 0 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        &__nav {}
+
+        &__item {
+            display: none;
+        }
+
+        &__items {
+            background-image: url('../img/menu.png');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50px;
+            height: 28px;
+            order: 2;
+            float: right;
+
+        }
+
+        &__lang {
+            order: 1;
+            width: 102px;
+            float: left;
+            text-align: center;
+            font-size: 20px;
+            line-height: 50px;
+        }
+
+        &__menu {
+            width: 152px;
+            height: 50px;
+            display: flex;
+            // flex-direction: row-reverse;
+            // justify-content: space-between;
+            // align-items: center;
+        }
+    }
+
+    .hero {
+        height: 590px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 64px;
+        }
+    }
+
+    .video {
+        &__player {
+            height: 628px;
+        }
+    }
+
+    .contacts {
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+
+        &__inner {
+            width: 450px;
+            height: 429px;
+            margin: 0 0 35px 0;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 64px;
+            margin: 0 auto;
+            width: 182px;
+        }
+    }
+
+    .footer {
+        &__inner {
+            align-items: center;
+            flex-direction: column;
+            height: 190px;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+
+    }
+}
+
+@media (max-width: 425px) {
+    .title {
+        width: 80%;
+    }
+
+    .text {
+        width: 300px;
     }
 }

@@ -91,6 +91,7 @@ h6 {
 body {
     background-color: #000;
     font-family: Inter;
+    overflow-x: hidden;
 }
 
 .text {
@@ -123,17 +124,17 @@ body {
 }
 
 .title {
-    width: 700px;
+    max-width: 700px;
     height: 80px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 100px auto 0px auto;
+    margin-top: 100px;
 
     &__line {
         display: flex;
-        flex: 1 1 33.33%;
+        // flex: 1 1 33.33%;
         width: 274px;
         height: 2px;
         background-color: #BDAE82;
@@ -147,5 +148,14 @@ body {
         font-size: 40px;
         line-height: 80px;
         padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        width: 364px;
+        &__line {
+            width: 100%;
+        }
     }
 }

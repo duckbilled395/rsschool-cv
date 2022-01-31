@@ -18,7 +18,6 @@
     <header class="header container">
         <div class="header__inner">
             <a class="header__logo" href="#">
-                <!-- <img src="img/header__logo.png" alt=""> -->
             </a>
             <div class="header__menu">
                 <nav class="header__nav">
@@ -31,6 +30,22 @@
                     </ul>
                     <p class="header__lang"><a class="header__lang-link" href="#">en</a> / <a class="header__lang-link"
                             href="#">ru</a></p>
+                    <div class="header__burger-lines">
+                        <span class="header__burger-lines-line1"></span>
+                        <span class="header__burger-lines-line2"></span>
+                        <span class="header__burger-lines-line3"></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__burger">
+                <nav class="header__burger-nav">
+                    <ul class="header__burger-items">
+                        <li class="header__burger-item"><a href="#" class="header__item-link">Skills</a></li>
+                        <li class="header__burger-item"><a href="#" class="header__item-link">Portfolio</a></li>
+                        <li class="header__burger-item"><a href="#" class="header__item-link">Video</a></li>
+                        <li class="header__burger-item"><a href="#" class="header__item-link">Price</a></li>
+                        <li class="header__burger-item"><a href="#" class="header__item-link">Contacts</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -54,27 +69,33 @@
                 <div class="title__line"></div>
             </div>
             <div class="skills__items">
-                <div class="skills__item">
-                    <div class="skills__item-logo"><img src="img/skills__camera.png" alt="camera"></div>
-                    <h3 class="skills__item-title">Digital photography</h3>
-                    <p class="skills__item-text text">High-quality photos in the studio and on the nature</p>
+                <div class="skills__items-container">
+                    <div class="skills__item">
+                        <div class="skills__item-logo"><img src="img/skills__camera.png" alt="camera"></div>
+                        <h3 class="skills__item-title">Digital photography</h3>
+                        <p class="skills__item-text text">High-quality photos in the studio and on the nature</p>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__item-logo"><img src="img/skills__video.png" alt="video"></div>
+                        <h3 class="skills__item-title">Video shooting</h3>
+                        <p class="skills__item-text text">Capture your moments so that they always stay with you</p>
+                    </div>
                 </div>
-                <div class="skills__item">
-                    <div class="skills__item-logo"><img src="img/skills__video.png" alt="video"></div>
-                    <h3 class="skills__item-title">Video shooting</h3>
-                    <p class="skills__item-text text">Capture your moments so that they always stay with you</p>
+                <div class="skills__items-container">
+                    <div class="skills__item">
+                        <div class="skills__item-logo"><img src="img/skills__img.png" alt="image"></div>
+                        <h3 class="skills__item-title">Retouch</h3>
+                        <p class="skills__item-text text">I strive to make photography surpass reality</p>
+                    </div>
+                    <div class="skills__item">
+                        <div class="skills__item-logo"><img src="img/skills__mic.png" alt="microphone"></div>
+                        <h3 class="skills__item-title">Audio</h3>
+                        <p class="skills__item-text text">Professional sounds recording for video, advertising,
+                            portfolio
+                        </p>
+                    </div>
                 </div>
-                <div class="skills__item">
-                    <div class="skills__item-logo"><img src="img/skills__img.png" alt="image"></div>
-                    <h3 class="skills__item-title">Retouch</h3>
-                    <p class="skills__item-text text">I strive to make photography surpass reality</p>
-                </div>
-                <div class="skills__item">
-                    <div class="skills__item-logo"><img src="img/skills__mic.png" alt="microphone"></div>
-                    <h3 class="skills__item-title">Audio</h3>
-                    <p class="skills__item-text text">Professional sounds recording for video, advertising, portfolio
-                    </p>
-                </div>
+
             </div>
         </section>
         <!-- PORTFOLIO -->
@@ -85,14 +106,10 @@
                 <div class="title__line"></div>
             </div>
             <div class="portfolio__btns">
-                <div class="portfolio__btns-inner">
                     <button class="portfolio__btn button">Winter</button>
                     <button class="portfolio__btn button">Spring</button>
-                </div>
-                <div class="portfolio__btns-inner">
                     <button class="portfolio__btn button">Summer</button>
                     <button class="portfolio__btn button">Autumn</button>
-                </div>
             </div>
             <div class="portfolio__photos">
                 <div class="portfolio__photo">
@@ -172,9 +189,9 @@
                 <div class="contacts__title">
                     <h2>Contact me</h2>
                 </div>
-                <input class="contacts__email" value="E-mail" type="email">
-                <input class="contacts__phone" value="Phone" type="tel">
-                <input class="contacts__message" value="Message" type="text">
+                <input class="contacts__email" placeholder="E-mail" type="email">
+                <input class="contacts__phone" placeholder="Phone" type="tel">
+                <input class="contacts__message" placeholder="Message" type="text">
                 <button class="button">Send message</button>
             </div>
         </section>
@@ -196,6 +213,7 @@
             </div>
         </div>
     </footer>
+<script src="js/app.js"></script>
 </body>
 
 </html>

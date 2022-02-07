@@ -61,7 +61,11 @@ function previousSong() {
         //change play/pause button
         document.getElementById('play-pause').src = './assets/svg/pause.png';
         //change scale to 1.15
-        document.getElementById('thumbnail').classList.toggle('thumbnail__active');
+        if(document.getElementById('thumbnail').classList.contains('thumbnail__active')) {
+
+        } else {
+            document.getElementById('thumbnail').classList.toggle('thumbnail__active');
+        }
         //change backgorund img
         document.getElementById('background').src = './assets/img/dontstartnow.png';
         //change player img
@@ -72,8 +76,10 @@ function previousSong() {
         //change play/pause button
         document.getElementById('play-pause').src = './assets/svg/pause.png';
         //change scale to 1.15
-        if (document.getElementById('thumbnail').classList.contains('thumbnail__active')) {} else {
-            document.getElementById('thumbnail__active').classList.toggle('thumbnail');
+        if(document.getElementById('thumbnail').classList.contains('thumbnail__active')) {
+
+        } else {
+            document.getElementById('thumbnail').classList.toggle('thumbnail__active');
         }
         //change background img
         document.getElementById('background').src = './assets/img/lemonade.png';

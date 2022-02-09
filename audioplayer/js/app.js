@@ -35,6 +35,9 @@ function nextSong() {
         document.getElementById('background').src = './assets/img/dontstartnow.png';
         //change player img
         document.getElementById('thumbnail').src = './assets/img/dontstartnow.png';
+        //change track name and song name
+        document.querySelector('.song-artist').innerHTML = 'DuaLipa';
+        document.querySelector('.song-title').innerHTML = "Don't start now"
     } else {
         //change src of audio
         document.getElementById('song').src = './assets/audio/beyonce.mp3';
@@ -50,6 +53,9 @@ function nextSong() {
         document.getElementById('background').src = './assets/img/lemonade.png';
         //change player img
         document.getElementById('thumbnail').src = './assets/img/lemonade.png';
+        //change track name and song name
+        document.querySelector('.song-artist').innerHTML = 'Beyonce';
+        document.querySelector('.song-title').innerHTML = "Don't Hurt Yourself"
     }
     audio.play();
 }
@@ -70,6 +76,9 @@ function previousSong() {
         document.getElementById('background').src = './assets/img/dontstartnow.png';
         //change player img
         document.getElementById('thumbnail').src = './assets/img/dontstartnow.png';
+        //change track name and song name
+        document.querySelector('.song-artist').innerHTML = 'Dua Lipa';
+        document.querySelector('.song-title').innerHTML = "Don't start now"
     } else {
         //change src of audio
         document.getElementById('song').src = './assets/audio/beyonce.mp3';
@@ -85,9 +94,20 @@ function previousSong() {
         document.getElementById('background').src = './assets/img/lemonade.png';
         //change player img
         document.getElementById('thumbnail').src = './assets/img/lemonade.png';
+        //change track name and song name
+        document.querySelector('.song-artist').innerHTML = 'Beyonce';
+        document.querySelector('.song-title').innerHTML = "Don't Hurt Yourself"
     }
     audio.play();
 }
+
+// let curTime = setInterval(function time() {
+//     document.querySelector('.currentTime').innerHTML = Math. audio.currentTime
+// }, 1000)
+// curTime();
+
+let progressBar = document.querySelector('#progress-bar');
+progressBar.value = audio.currentTime;
 
 function changeProgressBar() {
     // document.getElementById('progress-bar').value = audio.currentTime;

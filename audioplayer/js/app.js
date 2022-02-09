@@ -127,3 +127,8 @@ function changeCurrentTime(a, b) {
     }
     document.querySelector(b).textContent = time;
 };
+
+//prevent default double click zoom
+window.addEventListener('dbclick', (e) => {
+    e.preventDefault();
+})

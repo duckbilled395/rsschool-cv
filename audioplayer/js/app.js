@@ -30,12 +30,42 @@ let music = [{
             title: "Don't start now",
             source: './assets/audio/dontstartnow.mp3'
         }
+    },
+
+    {
+        id: 2,
+        trackInfo: {
+            img: './assets/img/solncemonako.jpg',
+            artist: 'Люся Чеботина',
+            title: "Солнце Монако",
+            source: 'https://cdn52.zvuk.com/track/preview?id=108506417&code=2qdmMxD-MIvo4SivH_0ZDA&expires=1644577186'
+        }
+    },
+
+    {
+        id: 3,
+        trackInfo: {
+            img: './assets/img/nervy.jpg',
+            artist: 'Нервы',
+            title: "Вороны",
+            source: 'https://cdn52.zvuk.com/track/preview?id=79801915&code=hKK0KuNnNtLoM5n9xsN21Q&expires=1644578796'
+        }
+    },
+
+    {
+        id: 4,
+        trackInfo: {
+            img: './assets/img/nervy2.jpg',
+            artist: 'Нервы',
+            title: "Ты бы охуела",
+            source: 'https://cdn42.zvuk.com/track/preview?id=79801898&code=2x0gFE3AdltkeVUP1XNoCw&expires=1644579391'
+        }
     }
 ];
 
 //EventListners
 //next button listner
-nextBtn.addEventListener('click', () => {
+let nextBtnEvent = nextBtn.addEventListener('click', () => {
     if (num == music.length - 1) {
         num = -1;
     }
@@ -106,6 +136,16 @@ function changeProgressBar() {
         progressBar.value = audio.currentTime / audio.duration;
         changeCurrentTime(audio.currentTime, '.currentTime');
         changeCurrentTime(audio.duration, '.durationTime');
+
+        //change song on next song after the first one ends
+        if (audio.currentTime == audio.duration) {
+            if (num == music.length - 1) {
+                num = -1;
+            }
+            num++;
+            changeSong(num);
+            playMode();
+        }
     })
 };
 changeProgressBar();

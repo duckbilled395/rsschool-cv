@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+.main {
+    background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+}
+
+.main__container {
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.button__container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(4, 80, 4);
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.button:hover {
+    transform: scale(1.15);
+    transition: ease .2s;
+}
+
+
+
+.button__img {
+    width: 190px;
+    height: 190px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.joke__container {
+    width: 100%;
+    height: 50vh;
+}
+
+.joke {
+    color:rgb(4, 80, 4);
+    font-family: Inter;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .joke {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
+.footer {
+    height: 10vh;
+    background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+    border-top: 5px rgb(4, 80, 4) solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.git {
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Inter;
+}
+
+.year {
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: Inter;
+}
+
+.logo__img {
+    width: auto;
+    height: 5vh;
+}

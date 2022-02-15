@@ -19,6 +19,6 @@ field.addEventListener('click', event => {
 
 function abv() {
     console.log([...document.querySelectorAll('.cell')].map(item => {
-    console.log(item.getAttribute('data-value').)
+    console.log(item.getAttribute('data-value')
 }))
 }

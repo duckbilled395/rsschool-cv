@@ -161,7 +161,7 @@ h6 {
     opacity: 0;
     transition:all 0.3s linear;
     border-radius: 25px;
-    margin-top: -210px;
+    /* margin-top: -210px; */
     text-align: center;
 }
 
@@ -189,7 +189,7 @@ h6 {
 @media (max-width: 460px) {
     .modal {
         min-height: 200px;
-        margin-top: -250px;
+        /* margin-top: -250px; */
     }
     .modal-active {
         width: 250px;

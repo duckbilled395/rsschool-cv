@@ -7,3 +7,5 @@
 [Audioplayer](https://duckbilled395.github.io/rsschool-cv/audioplayer/index.html)
 
 [RandomJoke](https://duckbilled395.github.io/rsschool-cv/RandomJoke/index.html)
+
+[TicTacToe](https://duckbilled395.github.io/rsschool-cv/TicTacToe/index.html)

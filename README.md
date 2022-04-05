@@ -9,3 +9,5 @@
 [RandomJoke](https://duckbilled395.github.io/rsschool-cv/RandomJoke/index.html)
 
 [TicTacToe](https://duckbilled395.github.io/rsschool-cv/TicTacToe/index.html)
+
+[3D Scroll](https://duckbilled395.github.io/rsschool-cv/3D%20Scroll/index.html)

@@ -12,4 +12,4 @@
 
 [3D Scroll](https://duckbilled395.github.io/rsschool-cv/3D%20Scroll/index.html)
 
-[Todo List](https://duckbilled395.github.io/rsschool-cv/Todo/index.html)
+[Todo List](https://duckbilled395.github.io/Todo/)
